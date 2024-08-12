@@ -21,7 +21,6 @@ public class Main {
          JTextField tf = new JTextField(20);
          tf.setBounds(50,100,200,50);
          frame.add(tf);
-         this.nombre = tf.getText();
 
          JButton button = new JButton("Saludar");
          button.setBounds(50, 150, 200, 50);
