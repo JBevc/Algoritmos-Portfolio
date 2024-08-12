@@ -40,20 +40,4 @@ public class Main {
     private void botonSaludarAccion(java.awt.event.ActionEvent evt) {
         JOptionPane.showMessageDialog(this, "¡Hola, " + this.nombre +"!", null, 0);
     }
-
-    // public static void crearYMostrarGUI() {
-    //     JFrame frame = new JFrame("Chat Frame");
-    //     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-    //     JLabel label = new JLabel("Ingrese su nombre");
-    //     JTextField tf = new JTextField(20);
-    //     JButton saludar = new JButton("Saludar");
-
-    //     frame.getContentPane().add(label);
-    //     frame.getContentPane().add(tf);
-    //     frame.getContentPane().add(saludar);
-
-    //     frame.setSize(300,300);
-    //     frame.setVisible(true);
-    // }
 }
