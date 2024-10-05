@@ -4,10 +4,13 @@ import java.util.LinkedList;
 import java.util.List;
 
 
-public class TElementoEA extends TElementoAB<Integer> {
+public class TElementoEA extends TElementoAB<T> implements IElementoAB<T> {
 
   public TElementoEA(Comparable etiqueta, Integer datos) {
     super(etiqueta, datos);
+    hijoIzq
+    hijoDer
+
   }
 
   public String insertarAE(String expresion) {
@@ -16,14 +19,14 @@ public class TElementoEA extends TElementoAB<Integer> {
       char etiqueta = nuevaExpresion.charAt(0);
 
       // insertar hijo izquierdo
-      TElementoEA hijoIzq = new TElementoEA(etiqueta, Character.getNumericValue(etiqueta));
+      IElementoEA hijoIzq = new TElementoEA(etiqueta, Character.getNumericValue(etiqueta));
       this.setHijoIzq(hijoIzq);
       nuevaExpresion = hijoIzq.insertarAE(nuevaExpresion);
 
       // insertar hijo derecho
       nuevaExpresion = nuevaExpresion.substring(1);
       char etiquetaDer = nuevaExpresion.charAt(0);
-      TElementoEA hijoDer = new TElementoEA(etiquetaDer, Character.getNumericValue(etiquetaDer));
+      IElementoEA hijoDer = new TElementoEA(etiquetaDer, Character.getNumericValue(etiquetaDer));
       this.setHijoDer(hijoDer);
       nuevaExpresion = hijoDer.insertarAE(nuevaExpresion);
 

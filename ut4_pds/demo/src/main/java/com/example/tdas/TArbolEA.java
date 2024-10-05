@@ -4,6 +4,7 @@ public class TArbolEA extends TArbolBB<Integer>{
 
   public TArbolEA() {
     super();
+    raiz;
   }
 
   public String construir(String expresion) {
